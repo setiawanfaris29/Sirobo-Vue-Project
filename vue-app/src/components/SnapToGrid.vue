@@ -1,5 +1,6 @@
 <template>
-  <body></body>
+  <body>
+  </body>
 </template>
 
 <script>
@@ -20,21 +21,38 @@ var points = d3.range(10).map(function() {
   };
 });
 
+
 var drag = d3.behavior
   .drag()
   .origin(function(d) {
     return d;
   })
-  .on("drag", dragged);
+  .on("drag", dragged)
+
+var svg1 = d3.select("body")
+.append("g")
+.attr("width", 200)
+.attr("height", 100)
+
+svg1.append("text")
+.data(points)
+.text("name")
+.attr("x", function(d) {return d.x;})
+.attr("y", function(d) {return d.y;})
+.style("fill", "black")
+
+
 
 var svg = d3
   .select("body")
   .append("svg")
   .attr("width", `0 0 300 600`)
   // .attr("width", width)
-  .attr("height", height);
+  .attr("height", height)
   // .attr("width", `0 0 300 600`)
   // .attr("height", height);
+
+
 
 svg
   .selectAll(".vertical")
@@ -74,7 +92,7 @@ svg
     "stroke-width": "1px",
   });
 
-var circles = svg
+svg
   .selectAll("circle")
   .data(points)
   .enter()
@@ -86,20 +104,24 @@ var circles = svg
     return d.y;
   })
   .attr("r", r)
-  .call(drag);
+  .call(drag)
+  .style("fill", "steelblue")
 
-circles.style("fill", "steelblue");
+  
 
 function dragged(d) {
-  var x = d3.event.x,
-    y = d3.event.y,
-    gridX = round(Math.max(r, Math.min(width - r, x)), resolution),
-    gridY = round(Math.max(r, Math.min(height - r, y)), resolution);
+  d.x = d3.event.x,
+  d.y = d3.event.y
+ 
+    var gridX = round(Math.max(r, Math.min(width - r, d.x)), resolution)
+    var gridY = round(Math.max(r, Math.min(height - r, d.y)), resolution);
 
   d3.select(this)
-    .attr("cx", (d.x = gridX))
-    .attr("cy", (d.y = gridY));
+    .attr("cx", (d.x = gridX ))
+    .attr("cy", (d.y = gridY ))
+    // .attr("transform", function(){ return "translate(" + d3.event.x + "," + d3.event.y + ")"})
 }
+
 
 function round(p, n) {
   return p % n < n / 2 ? p - (p % n) : p + n - (p % n);

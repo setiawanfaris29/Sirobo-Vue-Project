@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <!-- <CardView/> -->
-    <SnapToGrid/>
+    <CardView/>
+    <!-- <SnapToGrid/> -->
   </div>
 </template>
 
 <script>
-// import CardView from './components/CardView.vue'
-import SnapToGrid from './components/SnapToGrid.vue'
+import CardView from './components/CardView.vue'
+// import SnapToGrid from './components/SnapToGrid.vue'
 
 export default {
   name: 'App',
   components: {
-    // CardView,
-    SnapToGrid
+    CardView,
+    // SnapToGrid
   }
 }
 </script>
@@ -26,5 +26,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 </style>

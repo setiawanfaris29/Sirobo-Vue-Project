@@ -1,40 +1,45 @@
 <template>
-  <div container>
-    <row gutter="12" columns="10">
-      <column xs="12" lg="3">
+  <div>
+  
+  <b-img width="150px" class="mb-3" src="https://images.solopos.com/2015/08/logo-jateng-1200x900.png" fluid rounded center/>
+
+    <b-container fluid="sm">
+    <b-row class="mb-3">
+      <b-col sm="6">
         <div
           class="card"
           style="background-color:#68b0ab;"
-          @click="$bvModal.show('modal-scoped')"
+        @click="$bvModal.show('modal-scoped')"
         >
           Pendafataran Anggota Baru
         </div>
-      </column>
-    </row>
+      </b-col>
+    </b-row>
 
-    <row gutter="12" columns="10">
-      <column xs="12" lg="4">
-        <div class="card" style="background-color:#8fc0a9;">
+    <b-row class="mb-3">
+      <b-col  sm="6">
+        <audio ref="audio" src="../assets/ES_Multimedia Alarm 24_SFX_Producer.mp3" preload id="audio" muted></audio>
+        <div class="card toggle-sound" style="background-color:#8fc0a9;" @click="playSound()">
           Coworking Space
         </div>
-      </column>
-    </row>
+      </b-col>
+    </b-row>
 
-    <row gutter="12" columns="10">
-      <column xs="12" lg="4">
+    <b-row class="mb-3">
+      <b-col  sm="6">
         <div class="card" style="background-color:#c8d5b9;">
           Buku
         </div>
-      </column>
-    </row>
+      </b-col>
+    </b-row>
 
-    <row gutter="12" columns="10">
-      <column xs="12" lg="3">
+    <b-row class="mb-3">
+      <b-col sm="6">
         <div class="card" style="background-color:#faf3dd;">
           Anak-anak
         </div>
-      </column>
-    </row>
+      </b-col>
+    </b-row>
 
     <b-modal v-model="show" id="modal-scoped" centered>
       <template #modal-header>
@@ -59,6 +64,10 @@
         >
       </template>
     </b-modal>
+
+    <b-embed class="mb-3 embed-responsive-1by1" type="iframe" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen />
+
+ </b-container>
   </div>
 </template>
 
@@ -68,23 +77,45 @@ export default {
   data() {
     return {
       show: false,
-    };
+    }
   },
+  methods: {
+     playSound() {
+        let audio = this.$refs.audio;
+        console.log("play it")
+        audio.play();
+        document.querySelector(".toggle-sound")
+      //   if (
+      //     audio.paused &&
+      //     document.querySelector(".toggle-sound").classList.contains("paused")
+      //   ) {
+      //     console.log("play it")
+      //     audio.play();
+      //     document.querySelector(".toggle-sound").classList.remove("paused");
+      //   } else {
+      //     console.log("pause it")
+      //     audio.pause();
+      //     document.querySelector(".toggle-sound").classList.add("paused");
+      //   }
+      }
+  }
 };
 </script>
 
 <style>
+div{
+  display: block;
+  justify-content: center;
+}
+
 .card {
-  display: grid;
   width: auto;
   height: 100%;
-  margin: 30px;
   padding: 50px;
   justify-content: center;
-  align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
+  border-radius: 10px;
 }
 
 .card:hover {
