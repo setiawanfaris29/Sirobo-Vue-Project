@@ -65,9 +65,18 @@
       </template>
     </b-modal>
 
-    <b-embed class="mb-3 embed-responsive-1by1" type="video" controls >
+    <vue-plyr>
+        <video controls
+    crossorigin
+    playsinline
+    poster="../assets/posters.png" :videos="this.videos">
+           <source src="../assets/Selamat_Datang_di_Kota_Semarang.mp4" type="video/mp4" />
+        </video>
+    </vue-plyr>
+
+    <!-- <b-embed controls controlsList="nodownload" class="video mb-3 embed-responsive-1by1" type="video"  preload="none" poster="/">
       <source src="../assets/Selamat_Datang_di_Kota_Semarang.mp4" type="video/mp4">
-    </b-embed>
+    </b-embed> -->
 
  </b-container>
   </div>
@@ -80,6 +89,7 @@ export default {
     return {
       show: false,
     }
+    
   },
   methods: {
      playSound() {
@@ -108,6 +118,16 @@ export default {
 div{
   display: block;
   justify-content: center;
+}
+
+.video{
+  width: auto;
+  height: auto;
+  background: transparent url('../assets/posters.png') no-repeat 0 0;
+  -webkit-background-size:cover;
+   -moz-background-size:cover;
+   -o-background-size:cover;
+   background-size:cover;
 }
 
 .card {

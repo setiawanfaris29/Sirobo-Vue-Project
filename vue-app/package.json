@@ -18,7 +18,8 @@
     "core-js": "^3.6.5",
     "d3": "^3.5.17",
     "vue": "^2.6.12",
-    "vue-grid-responsive": "^0.2.0"
+    "vue-grid-responsive": "^0.2.0",
+    "vue-plyr": "^7.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
