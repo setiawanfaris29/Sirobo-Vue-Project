@@ -65,7 +65,9 @@
       </template>
     </b-modal>
 
-    <b-embed class="mb-3 embed-responsive-1by1" type="iframe" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen />
+    <b-embed class="mb-3 embed-responsive-1by1" type="video" controls >
+      <source src="../assets/Selamat_Datang_di_Kota_Semarang.mp4" type="video/mp4">
+    </b-embed>
 
  </b-container>
   </div>
