@@ -8,7 +8,7 @@
       <b-col sm="6">
         <div
           class="card"
-          style="background-color:#68b0ab;"
+          style="background-color:#00b3ff;"
         @click="$bvModal.show('modal-scoped')"
         >
           Pendafataran Anggota Baru
@@ -19,7 +19,7 @@
     <b-row class="mb-3">
       <b-col  sm="6">
         <audio ref="audio" src="../assets/ES_Multimedia Alarm 24_SFX_Producer.mp3" preload id="audio" muted></audio>
-        <div class="card toggle-sound" style="background-color:#8fc0a9;" @click="playSound()">
+        <div class="card toggle-sound" style="background-color:#00b3ff;" @click="playSound()">
           Coworking Space
         </div>
       </b-col>
@@ -27,7 +27,7 @@
 
     <b-row class="mb-3">
       <b-col  sm="6">
-        <div class="card" style="background-color:#c8d5b9;">
+        <div class="card" style="background-color:#00b3ff;">
           Buku
         </div>
       </b-col>
@@ -35,7 +35,7 @@
 
     <b-row class="mb-3">
       <b-col sm="6">
-        <div class="card" style="background-color:#faf3dd;">
+        <div class="card" style="background-color:#00b3ff;">
           Anak-anak
         </div>
       </b-col>
@@ -66,10 +66,11 @@
     </b-modal>
 
     <vue-plyr>
-        <video controls
-    crossorigin
-    playsinline
-    poster="../assets/posters.png" :videos="this.videos">
+        <video
+        controls
+        crossorigin
+        playsinline
+        poster="../assets/posters.png" :videos="this.videos">
            <source src="../assets/Selamat_Datang_di_Kota_Semarang.mp4" type="video/mp4" />
         </video>
     </vue-plyr>
@@ -120,15 +121,19 @@ div{
   justify-content: center;
 }
 
-.video{
-  width: auto;
-  height: auto;
-  background: transparent url('../assets/posters.png') no-repeat 0 0;
-  -webkit-background-size:cover;
-   -moz-background-size:cover;
-   -o-background-size:cover;
-   background-size:cover;
+video{
+  max-width: 100%;
 }
+
+.plyr{
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.plyr .plyr__video-wrapper {
+  height: 1080px;
+}
+
 
 .card {
   width: auto;
