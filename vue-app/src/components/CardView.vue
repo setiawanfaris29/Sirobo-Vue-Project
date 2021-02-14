@@ -4,7 +4,7 @@
   <b-img width="150px" class="mb-3" src="https://images.solopos.com/2015/08/logo-jateng-1200x900.png" fluid rounded center/>
 
     <b-container fluid="sm">
-    <b-row class="mb-3">
+    <!-- <b-row class="mb-3">
       <b-col sm="6">
         <div
           class="card"
@@ -14,29 +14,65 @@
           Pendafataran Anggota Baru
         </div>
       </b-col>
-    </b-row>
+    </b-row> -->
 
-    <b-row class="mb-3">
+    <!-- <b-row class="mb-3">
       <b-col  sm="6">
         <audio ref="audio" src="../assets/ES_Multimedia Alarm 24_SFX_Producer.mp3" preload id="audio" muted></audio>
         <div class="card toggle-sound" style="background-color:#00b3ff;" @click="playSound()">
           Coworking Space
         </div>
       </b-col>
-    </b-row>
+    </b-row> -->
 
-    <b-row class="mb-3">
+    
+
+    <!-- <b-row class="mb-3">
       <b-col  sm="6">
         <div class="card" style="background-color:#00b3ff;">
           Buku
         </div>
       </b-col>
-    </b-row>
+    </b-row> -->
 
-    <b-row class="mb-3">
+    <!-- <b-row class="mb-3">
       <b-col sm="6">
         <div class="card" style="background-color:#00b3ff;">
           Anak-anak
+        </div>
+      </b-col>
+    </b-row> -->
+
+    <b-row class="mb-3">
+      <b-col  sm="6">
+      
+        <div class="card" style="background-color:#00b3ff;" @click.native="ktp()">
+          SYARAT PEMBUATAN KTP
+        </div>
+       
+      </b-col>
+    </b-row>
+
+     <b-row class="mb-3">
+      <b-col  sm="6">
+        <div class="card" style="background-color:#00b3ff;">
+          SURAT IZIN IMB
+        </div>
+      </b-col>
+    </b-row>
+
+     <b-row class="mb-3">
+      <b-col  sm="6">
+        <div class="card" style="background-color:#00b3ff;">
+          IZIN USAHA MIKRO KECIL (IUMK)
+        </div>
+      </b-col>
+    </b-row>
+
+     <b-row class="mb-3">
+      <b-col  sm="6">
+        <div class="card" style="background-color:#00b3ff;">
+          SYARAT PEMBUATAN KTP
         </div>
       </b-col>
     </b-row>
@@ -84,11 +120,13 @@
 </template>
 
 <script>
+
 export default {
   name: "CardView",
   data() {
     return {
       show: false,
+      ktp : true
     }
     
   },
@@ -111,8 +149,10 @@ export default {
       //     document.querySelector(".toggle-sound").classList.add("paused");
       //   }
       }
-  }
-};
+
+  },
+
+}
 </script>
 
 <style>
