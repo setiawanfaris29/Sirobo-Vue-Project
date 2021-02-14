@@ -1,23 +1,31 @@
 <template>
   <div id="app">
     <!-- <CardView/> -->
-    <CreateKTP/>
+    <!-- <CreateKTP/> -->
+    <!-- <Nikah/> -->
     <!-- <SnapToGrid/> -->
+    <!-- <CreateBangunan/> -->
+    <Umkm/>
   </div>
 </template>
 
 <script>
 // import CardView from './components/CardView.vue'
-import CreateKTP from './components/CreateKTP.vue'
+// import CreateKTP from './components/CreateKTP.vue'
+// import Nikah from './components/CreateMenikah.vue'
 // import SnapToGrid from './components/SnapToGrid.vue'
+// import CreateBangunan from './components/CreateBangunan.vue'
+import Umkm from './components/CreateUmkm.vue'
 
 export default {
   name: 'App',
   components: {
     // CardView,
-    CreateKTP
+    // CreateKTP
     // SnapToGrid
-    
+    // Nikah
+    // CreateBangunan
+    Umkm    
   }
 }
 </script>
