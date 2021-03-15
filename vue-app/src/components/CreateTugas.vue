@@ -27,7 +27,7 @@
 
  <div class="header">
         <h1 style="color:#fff;">
-       <strong style="color:#dc3545;">Sejarah</strong> <strong style="color:#AAE003;">Singkat</strong> 
+       <strong style="color:#dc3545;">Tugas</strong> dan <strong style="color:#AAE003;">Fungsi Pokok</strong> 
         </h1>
       </div>
 

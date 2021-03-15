@@ -47,7 +47,7 @@
       <b-col  sm="6">
       
         <div class="card" style="background-color:#00b3ff;" @click.native="ktp()">
-          SYARAT PEMBUATAN KTP
+          VISI MISI
         </div>
        
       </b-col>
@@ -56,7 +56,7 @@
      <b-row class="mb-3">
       <b-col  sm="6">
         <div class="card" style="background-color:#00b3ff;">
-          SURAT IZIN IMB
+          SEJARAH SINGKAT
         </div>
       </b-col>
     </b-row>
@@ -64,7 +64,7 @@
      <b-row class="mb-3">
       <b-col  sm="6">
         <div class="card" style="background-color:#00b3ff;">
-          IZIN USAHA MIKRO KECIL (IUMK)
+          TUGAS dan FUNGSI POKOK
         </div>
       </b-col>
     </b-row>
@@ -72,7 +72,7 @@
      <b-row class="mb-3">
       <b-col  sm="6">
         <div class="card" style="background-color:#00b3ff;">
-          SYARAT PEMBUATAN KTP
+        ALUR PERIZINAN
         </div>
       </b-col>
     </b-row>
