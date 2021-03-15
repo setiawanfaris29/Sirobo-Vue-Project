@@ -1,15 +1,39 @@
 <template>
   <div>
-    <div class="divFixed divLogo">
+    <!-- <div class="divFixed divLogo">
       <img
         width="100px"
         class="center-image mb-3"
         src="@/assets/Lambang_Kota_Semarang.png"
       />
+    </div> -->
+ <div class="divLogo">
+      <div class="m-3">
+      <img
+        width="300px"
+        src="@/assets/dpmptsplogo3.png"
+      />
     </div>
-
+  <div class="m-3 mr-5">
+      <img
+        width="100px"
+        src="@/assets/Lambang_Kota_Semarang.png"
+      />
+    </div>
+    </div>
+  
     <div class="div1">
-      <b-button style="font-weight:bold;" variant="primary">Kembali</b-button>
+
+<div class="containers">
+  <h1 >
+       <strong >Alur Perizinan </strong> DPMPTSP 
+        </h1>
+  <p style="font-weight: lighter;">
+    DPMPTSP sangat mengharapkan pelayanan kepada masyarakat beroperasi dan berjalan secara efektif dan efesien. Untuk mewujudkan hal tersebut, DPMPTSP Kota Semarang menerapkan mekanisme pelayanan yang mudah diikuti.
+</p>
+<img width="100%" class="img-fluid" src="@/assets/alur.jpeg">
+</div>
+      <!-- <b-button style="font-weight:bold;" variant="primary">Kembali</b-button>
 
       <h1 style="font-weight:bold;" class="mb-5 mt-5">
         SYARAT PEMBUATAN SURAT IZIN IMB
@@ -132,7 +156,7 @@
             </b-card>
           </b-collapse>
         </b-card>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -144,16 +168,16 @@ export default {};
 <style>
 .div1 {
   display: block;
-  padding: 120px;
+ 
 }
 
 li {
   margin: 20px 20px 30px;
 }
-
+/* 
 h1 {
   text-align: center;
-}
+} */
 
 .plyr {
   width: 550px;
@@ -189,9 +213,14 @@ video {
 
 .divLogo {
   display: flex;
-  background-color: #dc3545;
-  justify-content: center;
+  background-color: #fff;
+  justify-content: space-between;
   padding: 20px;
+  box-shadow: 5px 2px 60px #2a2a2a25;
+  border-bottom: 8px solid #dc3545;
+  position: -webkit-sticky; /* Safari & IE */
+  position: sticky;
+  top: 0;
 }
 
 .zoomIn {
@@ -201,5 +230,9 @@ video {
 }
 .zoomIn:hover {
   transform: scale(1.5); /* (150% zoom)*/
+}
+.containers{
+   display: block;
+   margin: 25px;
 }
 </style>

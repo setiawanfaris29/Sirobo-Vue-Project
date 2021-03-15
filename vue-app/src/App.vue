@@ -1,38 +1,38 @@
 <template>
   <div id="app">
     <!-- <CardView/> -->
-    <!-- <CreateKTP/> -->
-    <!-- <Nikah/> -->
+    <Alur/>
+    <!-- <Tugas/> -->
     <!-- <SnapToGrid/> -->
-    <!-- <CreateBangunan/> -->
-    <Umkm/>
+    <!-- <Sejarah/> -->
+    <!-- <VisiMisi/> -->
   </div>
 </template>
 
 <script>
 // import CardView from './components/CardView.vue'
-// import CreateKTP from './components/CreateKTP.vue'
-// import Nikah from './components/CreateMenikah.vue'
+import Alur from './components/CreateAlur.vue'
+// import Tugas from './components/CreateTugas.vue'
 // import SnapToGrid from './components/SnapToGrid.vue'
-// import CreateBangunan from './components/CreateBangunan.vue'
-import Umkm from './components/CreateUmkm.vue'
+// import Sejarah from './components/CreateSejarah.vue'
+// import VisiMisi from './components/CreateVisiMisi.vue'
 
 export default {
   name: 'App',
   components: {
     // CardView,
-    // CreateKTP
+    Alur
     // SnapToGrid
-    // Nikah
-    // CreateBangunan
-    Umkm    
+    // Tugas
+    // Sejarah
+    // VisiMisi    
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */

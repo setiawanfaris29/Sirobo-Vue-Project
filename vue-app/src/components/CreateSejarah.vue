@@ -1,17 +1,31 @@
 <template>
   <div>
-    <div class="divFixed divLogo">
+    <!-- <div class="divFixed divLogo">
       <img
         width="100px"
         class="center-image mb-3"
         src="@/assets/Lambang_Kota_Semarang.png"
       />
+    </div> -->
+  <div class="divLogo">
+      <div class="m-3">
+      <img
+        width="300px"
+        src="@/assets/dpmptsplogo3.png"
+      />
     </div>
+  <div class="m-3 mr-5">
+      <img
+        width="100px"
+        src="@/assets/Lambang_Kota_Semarang.png"
+      />
+    </div>
+    </div>
+  
 
     <div class="div1">
-      <b-button style="font-weight:bold;" variant="primary">Kembali</b-button>
-
-      <h1 style="font-weight:bold;" class="mb-5 mt-5">
+      <!-- <b-button style="font-weight:bold;" variant="primary">Kembali</b-button> -->
+      <!-- <h1 style="font-weight:bold;" class="mb-5 mt-5">
         SYARAT PEMBUATAN SURAT IZIN MENIKAH
       </h1>
       <div role="tablist">
@@ -186,6 +200,65 @@
             </b-card>
           </b-collapse>
         </b-card>
+      </div> -->
+       <div class="header">
+        <h1 style="color:#fff;">
+       <strong style="color:#dc3545;">Sejarah</strong> <strong style="color:#AAE003;">Singkat</strong> 
+        </h1>
+      </div>
+      <div class="containers">
+        <h2 class="mb-4"><strong>LATAR</strong> BELAKANG</h2>
+        <p style="font-weight: lighter;">Inpres Nomor 5 Tahun 2004 tentang Percepatan Pemberantasan Korupsi, dimana dari hasil studi yang dilakukan pihak luar negeri maupun Indonesia, menunjukkan bahwa dalam proses perizinan di Indonesia :</p>
+        <ol style="font-weight: lighter;">
+          <li>
+            Biaya untuk pengurusan izin cukup tinggi
+          </li>
+          <li>
+           Prosedur perizinan yang berbelit-belit
+          </li><li>
+            Persyaratan perizinan cukup banyak dan rumit
+          </li><li>
+            Waktu dan penyelesaian izin yang cukup lama dan tidak pas
+          </li>
+        </ol>
+        <p style="font-weight: lighter;">Dalam rangka mendorong pertumbuhan ekonomi melalui peningkatan investasi, dengan memberikan perhatian yang lebih besar pada urusan mikro, kecil dan menengah, perlu dilakukan penyederhanaan penyelenggaraan pelayanan terpadu sesuai Instruksi Presiden Nomor 3 Tahun 2006 tentang Paket Kebijakan Perbaikan Iklim Investasi.</p>
+
+     <h2 class="mt-4 mb-4"><strong>DASAR</strong> HUKUM</h2>
+     <ol style="font-weight: lighter;">
+          <li>
+            UU Nomor 25 Tahun 2007 tentang Penanaman Modal
+          </li>
+          <li>
+           UU Nomor 25 Tahun 2009 tentang Pelayanan Publik
+          </li>
+          <li>
+            Peraturan Pemerintah Nomor 41 tahun 2007 tentang Organisasi Perangkat Daerah
+          </li>
+          <li>
+            Peraturan Menteri Pendayagunaan Aparatur Negara Nomor 20 Tahun 2006 tentang Pedoman Penyusunan Standar Pelayanan Publik
+          </li>
+          <li>
+            Permendagri Nomor 24 Tahun 2006 tentang Pedoman Penyelenggaraan Pelayanan Terpadu Satu Pintu
+          </li>
+          <li>
+            Permendagri Nomor 20 Tahun 2008 tentang Pedoman Organisasi dan Tata Kerja Unit Pelayanan Perizinan Terpadu di Daerah
+          </li>
+          <li>
+            Kepmenpan Nomor 63 Tahun 2003 tentang Pedoman Umum Penyelenggaraan Pelayanan Publik
+          </li>
+          <li>
+            Perda Kota Semarang Nomor 10 Tahun 2013 tentang Perubahan Peraturan Daerah Kota Semarang Nomor 9 Tahun 2008 tentang Pembentukan Susunan Organisasi, Kedudukan dan Tugas Pokok Lembaga Teknis Daerah di Lingkungan Pemerintah Kota Semarang
+          </li>
+          <li>
+           Peraturan Walikota Semarang Nomor 85 Tahun 2013 tentang Perubahan atas Peraturan Walikota Semarang Nomor 18 Tahun 2008 tentang Rincian Tugas, Fungsi dan Tata Kerja Lembaga Teknis Daerah di Lingkungan Pemerintah Kota Semarang
+          </li>
+        </ol>
+         <h2 class="mt-4 mb-4"><strong>SEJARAH</strong> SINGKAT</h2>
+         <img width="100%" class="img-fluid mb-2" src="@/assets/sejarah_01.png">
+         <img width="100%" class="img-fluid mb-2" src="@/assets/sejarah_02.png">
+         <img width="100%" class="img-fluid mb-2" src="@/assets/sejarah_03.png">
+         <img width="100%" class="img-fluid mb-2" src="@/assets/sejarah_04.png">
+         <img width="100%" class="img-fluid mb-2" src="@/assets/sejarah_05.png">
       </div>
     </div>
   </div>
@@ -198,11 +271,14 @@ export default {};
 <style>
 .div1 {
   display: block;
-  padding: 120px;
 }
 
-li {
+/* li {
   margin: 20px 20px 30px;
+} */
+
+ol li{
+  margin: 5px;
 }
 
 h1 {
@@ -243,9 +319,14 @@ video {
 
 .divLogo {
   display: flex;
-  background-color: #dc3545;
-  justify-content: center;
+  background-color: #fff;
+  justify-content: space-between;
   padding: 20px;
+  box-shadow: 5px 2px 60px #2a2a2a25;
+  border-bottom: 8px solid #dc3545;
+  position: -webkit-sticky; /* Safari & IE */
+  position: sticky;
+  top: 0;
 }
 
 .zoomIn {
@@ -255,5 +336,37 @@ video {
 }
 .zoomIn:hover {
   transform: scale(1.5); /* (150% zoom)*/
+}
+
+.header{
+  display: flex;
+  justify-content: left;
+  padding: 25px;
+  background-color: #171717;
+}
+
+.carousel{
+  display: flex;
+  justify-content: center;
+  margin: 10px 20px 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 60px !important;
+  width: 60px !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.containers{
+   display: block;
+   margin: 25px;
 }
 </style>

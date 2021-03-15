@@ -1,18 +1,52 @@
 <template>
   <div>
-    <div class="divFixed divLogo">
+    <!-- <div class="divFixed divLogo">
       <img
         width="100px"
         class="center-image mb-3"
         src="@/assets/Lambang_Kota_Semarang.png"
       />
+    </div> -->
+    <div class="divLogo">
+      <div class="m-3">
+      <img
+        width="300px"
+        src="@/assets/dpmptsplogo3.png"
+      />
     </div>
+  <div class="m-3 mr-5">
+      <img
+        width="100px"
+        src="@/assets/Lambang_Kota_Semarang.png"
+      />
+    </div>
+    </div>
+  
 
     <div class="div1">
-      <b-button style="font-weight:bold;" variant="primary">Kembali</b-button>
 
-      <h1 style="font-weight:bold;" class="mb-5 mt-5">SYARAT PEMBUATAN KTP</h1>
-      <div role="tablist">
+ <div class="header">
+        <h1 style="color:#fff;">
+       <strong style="color:#dc3545;">Sejarah</strong> <strong style="color:#AAE003;">Singkat</strong> 
+        </h1>
+      </div>
+
+<div class="containers">
+<p style="font-weight: lighter;">Mengacu pada Peraturan Walikota Semarang Nomor 53 Tahun 2008 tentang Penjabaran Tugas Pokok dan Fungsi Badan Pelayanan Perijinan Terpadu Kota Semarang, unit organisasi ini mempunyai tugas pokok merencanakan, memimpin, mengkoordinasikan, membina, mengawasi dan mengendalikan serta mengevaluasi penyelenggaraan pelayanan perijinan terpadu.
+
+Untuk melaksanakan tugas pokok tersebut di atas, Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu Kota Semarang, antara lain mempunyai fungsi.
+
+</p>
+
+      <img width="100%" class="img-fluid mb-2" src="@/assets/tugas.png">
+</div>
+
+      
+
+      <!-- <b-button style="font-weight:bold;" variant="primary">Kembali</b-button> -->
+
+      <!-- <h1 style="font-weight:bold;" class="mb-5 mt-5">SYARAT PEMBUATAN KTP</h1> -->
+      <!-- <div role="tablist">
         <b-card no-body class="mb-2">
           <b-button
             size="lg"
@@ -179,7 +213,8 @@
             </b-card>
           </b-collapse>
         </b-card>
-      </div>
+      </div> -->
+      
     </div>
   </div>
 </template>
@@ -193,7 +228,6 @@ export default {
 <style>
 .div1 {
   display: block;
-  padding: 120px;
 }
 
 li {
@@ -238,9 +272,14 @@ video {
 
 .divLogo {
   display: flex;
-  background-color: #dc3545;
-  justify-content: center;
+  background-color: #fff;
+  justify-content: space-between;
   padding: 20px;
+  box-shadow: 5px 2px 60px #2a2a2a25;
+  border-bottom: 8px solid #dc3545;
+  position: -webkit-sticky; /* Safari & IE */
+  position: sticky;
+  top: 0;
 }
 
 .zoomIn {
@@ -250,5 +289,36 @@ video {
 }
 .zoomIn:hover {
   transform: scale(1.5); /* (150% zoom)*/
+}
+
+.header{
+  display: flex;
+  justify-content: left;
+  padding: 25px;
+  background-color: #171717;
+}
+
+.carousel{
+  display: flex;
+  justify-content: center;
+  margin: 10px 20px 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 60px !important;
+  width: 60px !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.containers{
+   display: block;
+   margin: 25px;
 }
 </style>

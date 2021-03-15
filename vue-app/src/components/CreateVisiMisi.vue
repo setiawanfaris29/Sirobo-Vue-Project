@@ -1,15 +1,114 @@
 <template>
   <div>
-    <div class="divFixed divLogo">
+    <div class="divLogo">
+      <div class="m-3">
+      <img
+        width="300px"
+        src="@/assets/dpmptsplogo3.png"
+      />
+    </div>
+  <div class="m-3 mr-5">
       <img
         width="100px"
-        class="center-image mb-3"
         src="@/assets/Lambang_Kota_Semarang.png"
       />
     </div>
+    </div>
 
     <div class="div1">
-      <b-button style="font-weight:bold;" variant="primary">Kembali</b-button>
+      <div class="header">
+        <h1 style="color:#fff;">
+       <strong style="color:#dc3545;">Visi</strong> dan <strong style="color:#AAE003;">Misi</strong> 
+        </h1>
+      </div>
+      
+      <div class="carousel">
+      <b-carousel
+      id="carousel-1"
+      :interval="4000"
+      controls
+      background="#ababab"
+      img-width="200"
+      img-height="600"
+      style="text-shadow: 1px 1px 2px #333;"
+    >
+
+      <!-- Slides with image only -->
+       <b-carousel-slide>
+        <template #img>
+          <img
+            class="d-block img-fluid w-100"
+            width="1024"
+            height="480"
+            src="@/assets/0001.jpeg"
+            alt="image slot"
+          >
+        </template>
+      </b-carousel-slide>
+
+       <b-carousel-slide>
+        <template #img>
+          <img
+            class="d-block img-fluid w-100"
+            width="1024"
+            height="480"
+            src="@/assets/0002.jpeg"
+            alt="image slot"
+          >
+        </template>
+      </b-carousel-slide>
+
+       <b-carousel-slide>
+        <template #img>
+          <img
+            class="d-block img-fluid w-100"
+            width="1024"
+            height="480"
+            src="@/assets/0003.jpeg"
+            alt="image slot"
+          >
+        </template>
+      </b-carousel-slide>
+
+       <b-carousel-slide>
+        <template #img>
+          <img
+            class="d-block img-fluid w-100"
+            width="1024"
+            height="480"
+            src="@/assets/0004.jpeg"
+            alt="image slot"
+          >
+        </template>
+      </b-carousel-slide>
+
+       <b-carousel-slide>
+        <template #img>
+          <img
+            class="d-block img-fluid w-100"
+            width="1024"
+            height="480"
+            src="@/assets/0005.jpeg"
+            alt="image slot"
+          >
+        </template>
+      </b-carousel-slide>
+
+       <b-carousel-slide>
+        <template #img>
+          <img
+            class="d-block img-fluid w-100"
+            width="1024"
+            height="480"
+            src="@/assets/0006.jpeg"
+            alt="image slot"
+          >
+        </template>
+      </b-carousel-slide>
+            </b-carousel>
+      </div>
+
+  <!-- <b-button style="font-weight:bold;" variant="primary">Kembali</b-button>
 
       <h1 style="font-weight:bold;" class="mb-5 mt-5">
         SYARAT PEMBUATAN SURAT IZIN USAHA MIKRO KECIL (IUMK)
@@ -260,19 +359,21 @@
           </b-collapse>
         </b-card>
 
-      </div>
-    </div>
+      </div> -->
+   
+  </div> 
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  
+};
 </script>
 
 <style>
 .div1 {
   display: block;
-  padding: 120px;
 }
 
 li {
@@ -317,9 +418,14 @@ video {
 
 .divLogo {
   display: flex;
-  background-color: #dc3545;
-  justify-content: center;
+  background-color: #fff;
+  justify-content: space-between;
   padding: 20px;
+  box-shadow: 5px 2px 60px #2a2a2a25;
+  border-bottom: 8px solid #dc3545;
+  position: -webkit-sticky; /* Safari & IE */
+  position: sticky;
+  top: 0;
 }
 
 .zoomIn {
@@ -329,5 +435,32 @@ video {
 }
 .zoomIn:hover {
   transform: scale(1.5); /* (150% zoom)*/
+}
+
+.header{
+  display: flex;
+  justify-content: left;
+  padding: 25px;
+  background-color: #171717;
+}
+
+.carousel{
+  display: flex;
+  justify-content: center;
+  margin: 10px 20px 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 60px !important;
+  width: 60px !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 </style>

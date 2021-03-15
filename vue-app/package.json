@@ -34,6 +34,8 @@
     "electron-devtools-installer": "^3.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
     "vue-cli-plugin-electron-builder": "~2.0.0-rc.5",
     "vue-template-compiler": "^2.6.11",
     "vue2-collapse": "^1.0.15"
